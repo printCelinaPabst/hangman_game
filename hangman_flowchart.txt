@@ -1,0 +1,14 @@
+#Flow Chart of Hangman game
+
+#generate a random word (later with different difficulty levels)
+#generate as many blank as letters in a word
+#ask player to guess a letter
+
+#if guessed letter is right-->replace blank with the letter
+#if guessed letter is wrong-->loses a life/creates a part of the illustration of the hangman
+
+#are all blanks filled?if no-->ask player for another letter
+                      #if yes-->game over and the game is won
+                      
+#no lives left?if yes--> game over and the game is lost
+              #if no-->ask player for another letter
