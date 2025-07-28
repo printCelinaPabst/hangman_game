@@ -1,0 +1,28 @@
+{
+    "easy": [
+        "cat",
+        "home",
+        "glass",
+        "tree",
+        "table",
+        "sun",
+        "vehicle",
+        "fish"
+    ],
+    "mid": [
+        "kindergarten",
+        "carrot",
+        "dandelion",
+        "banana",
+        "elephant",
+        "butterfly",
+        "police",
+        "chocolate"
+    ],
+    "hard": [
+        "appointment",
+        "flippers",
+        "locomotive",
+        "environment"
+    ]
+}
