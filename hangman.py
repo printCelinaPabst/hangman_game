@@ -1,15 +1,29 @@
+import json
+from functions import get_words
 import random
+
+easy, mid, hard = get_words()
 
 #game Title
 print("Welcome to Hangman!🕹️\n")
 
-#list with different words to guess
-word_list = ["monkey", "crocodile", "penguin"]
-
 while True:
+    #ask player for gaming mode
+    print("""Select a mode:\n
+    1 -> Easy mode
+    2 -> Mid Mode
+    3 -> Hard Mode\n""")
 
-    #picks a random word from the word_list
-    chosen_word = random.choice(word_list)
+    mode_choice = int(input("Type here: "))
+
+    #picks a random word based of mode choice
+    if mode_choice == 1:
+        chosen_word = random.choice(easy)
+    elif mode_choice == 2:
+        chosen_word = random.choice(mid)
+    elif mode_choice == 3:
+        chosen_word = random.choice(hard)
+
 
     #Create list with underscores matching the word length
     placeholder = list("_" * len(chosen_word))
@@ -40,6 +54,7 @@ while True:
         #Player wins if all letters are revealed and lives remain
         if "_" not in placeholder and lives > 0:
             print()
+            print(chosen_word)
             print("Congratulations!🙌")
             print("You won the game!")
             break
@@ -47,6 +62,7 @@ while True:
         #Player loses if there are no more lives left
         if lives == 0:
             print("You lost the game😵‍💫")
+            print(f"Your word was {chosen_word}\n")
             break
     #----------------------------------------------
 
