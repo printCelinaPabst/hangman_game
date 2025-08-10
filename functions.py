@@ -44,7 +44,11 @@ def save_words():
     # Remove duplicate entries in each category
     for key in data:
         data[key] = list(set(data[key]))
+
     #sort each category
+    data["easy"].sort()
+    data["mid"].sort()
+    data["hard"].sort()
 
     # save the updated data back to the json file
     with open(DATEI, "w") as f:
@@ -65,7 +69,7 @@ def get_words():
 #######----------use funtions here to save words------------####
 
 #add_easy()
-#add_mid()
+add_mid("pineapple")
 #add_hard)
 
-#save_words() #dont forget to save 
+save_words() #dont forget to save 
