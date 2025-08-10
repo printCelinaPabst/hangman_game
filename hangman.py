@@ -16,20 +16,19 @@ while True:
 
     mode_choice = int(input("Type here: "))
 
-    #picks a random word based of mode choice
+    #picks a random word based of mode choice and set initial number of lives for the player
     if mode_choice == 1:
         chosen_word = random.choice(easy)
+        lives = 3
     elif mode_choice == 2:
         chosen_word = random.choice(mid)
+        lives = 5
     elif mode_choice == 3:
         chosen_word = random.choice(hard)
-
+        lives = 6
 
     #Create list with underscores matching the word length
     placeholder = list("_" * len(chosen_word))
-
-    #Set initial number of lives for the player
-    lives = 5
 
     #asking player for a letter
     while lives > 0:
