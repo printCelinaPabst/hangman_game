@@ -1,28 +1,31 @@
 {
     "easy": [
         "cat",
-        "home",
-        "glass",
-        "tree",
-        "table",
-        "sun",
+        "animal",
         "vehicle",
-        "fish"
+        "glass",
+        "sun",
+        "hello",
+        "fish",
+        "table",
+        "kakao",
+        "home",
+        "tree"
     ],
     "mid": [
-        "kindergarten",
-        "carrot",
+        "chocolate",
         "dandelion",
-        "banana",
+        "carrot",
         "elephant",
         "butterfly",
-        "police",
-        "chocolate"
+        "kindergarten",
+        "banana",
+        "police"
     ],
     "hard": [
+        "locomotive",
         "appointment",
         "flippers",
-        "locomotive",
         "environment"
     ]
 }
