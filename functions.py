@@ -1,6 +1,11 @@
 import json
-from word_lists import easy_words, mid_words, hard_words
-import word_lists
+
+
+# Empty lists for word categories based on difficulty level
+easy_words = []
+mid_words = []
+hard_words = []
+
 
 # add words to easy_words list
 def add_easy(*word):
@@ -32,13 +37,14 @@ def save_words():
         data = {"easy": [], "mid": [], "hard": []}
 
     # add words from current word_lists to the JSON structure
-    data["easy"].extend(word_lists.easy_words)
-    data["mid"].extend(word_lists.mid_words)
-    data["hard"].extend(word_lists.hard_words)
+    data["easy"].extend(easy_words)
+    data["mid"].extend(mid_words)
+    data["hard"].extend(hard_words)
 
     # Remove duplicate entries in each category
     for key in data:
         data[key] = list(set(data[key]))
+    #sort each category
 
     # save the updated data back to the json file
     with open(DATEI, "w") as f:
