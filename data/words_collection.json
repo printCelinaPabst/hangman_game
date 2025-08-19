@@ -1,0 +1,40 @@
+{
+    "easy": [
+        "animal",
+        "banana",
+        "cat",
+        "fish",
+        "glass",
+        "hello",
+        "home",
+        "kakao",
+        "sun",
+        "table",
+        "tree",
+        "vehicle"
+    ],
+    "mid": [
+        "advertising",
+        "anniversary",
+        "bedroom",
+        "butterfly",
+        "carrot",
+        "category",
+        "chocolate",
+        "dandelion",
+        "elephant",
+        "kindergarten",
+        "pineapple",
+        "police"
+    ],
+    "hard": [
+        "acknowledge",
+        "administration",
+        "appearance",
+        "appointment",
+        "arrangement",
+        "environment",
+        "flippers",
+        "locomotive"
+    ]
+}
